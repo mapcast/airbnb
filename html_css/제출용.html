@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="finish2.css" />
+  </head>
+  <body id="body">
+    <div id="bgimg"></div>
+    <div id="contentWrapj" style="display:none">
+      <section class="contentj">
+        <div class="topsj">
+          <a href="javascript:view('contentWraps')">
+            <button>
+              <img src="img/close.svg" width="18px" />
+            </button>
+          </a>
+        </div>
+        <div class="buttonsj">
+          <div class="topbuttonsj">
+            <button id="facebook">
+              <div class="inbtn">
+                <img src="img/facebook.svg" width="18px" />
+                <span class="notgg"> 페이스북 계정으로 로그인</span>
+              </div>
+            </button>
+            <button id="google">
+              <div class="inbtn">
+                <img src="img/google.svg" width="18px" />
+                <span class="gg"> 구글 계정으로 로그인</span>
+              </div>
+            </button>
+          </div>
+          <div class="line-combo">
+            <div class="lines"></div>
+            <span>또는</span>
+            <div class="lines"></div>
+          </div>
+          <button id="email">
+            <div class="inbtn">
+              <img src="img/email.svg" width="18px" />
+              <span class="notgg"> 이메일로 회원 가입</span>
+            </div>
+          </button>
+        </div>
+        <div class="bottomsj">
+          <hr />
+          <div class="mojij">
+            <span>이미 에어비앤비 계정이 있나요? <a href="#">로그인</a></span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="contentWraps" style="display:none">
+      <div class="contents">
+        <div class="closebtns">
+          <a href="javascript:view('contentWraps') ">
+            <button>
+              <img src="img/close.svg" width="18px" />
+            </button>
+          </a>
+        </div>
+        <section class="body">
+          <div class="topbutton">
+            <button id="facebook">
+              <div class="inbtn">
+                <img src="img/facebook.svg" width="18px" />
+                <span class="notgg"> 페이스북 계정으로 로그인</span>
+              </div>
+            </button>
+            <button id="google">
+              <div class="inbtn">
+                <img src="img/google.svg" width="18px" />
+                <span class="gg"> 구글 계정으로 로그인</span>
+              </div>
+            </button>
+          </div>
+          <div class="inputarea">
+            <div class="line-combo">
+              <div class="lines"></div>
+              <span>또는</span>
+              <div class="lines"></div>
+            </div>
+            <div>
+              <div class="inputboxcont">
+                <input type="text" class="inputbox" placeholder="이메일 주소" />
+                <img src="img/grayemail.svg" width="16px" />
+              </div>
+              <div class="inputboxcont">
+                <input type="text" class="inputbox" placeholder="비밀번호" />
+                <img src="img/locker.svg" width="16px" />
+              </div>
+              <div class="passsave">
+                <span>
+                  <input type="checkbox" class="cb" />
+                  비밀번호 저장
+                </span>
+                <a href="#" id="searchpass">비밀번호 보기</a>
+              </div>
+              <div class="otheroptions">
+                <a href="#">전화번호로 로그인</a>
+                &nbsp;·&nbsp;
+                <a href="#">비밀번호가 생각나지 않으세요?</a>
+              </div>
+              <span> </span>
+              <button id="loginbutton">
+                <div class="inbtn">
+                  <span class="notgg">
+                    로그인
+                  </span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="moji">
+            <hr />
+            <span>에어비앤비 계정이 없으세요? <a href="#">회원 가입</a></span>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="tops">
+      <div id="abbtn">
+        <img src="img/airbnb.svg" width="34px;" />
+      </div>
+      <div id="topblank"></div>
+      <div id="topnav">
+        <div class="navpanellong">
+          <div class="inpanel">
+            <img src="img/world.svg" />
+            &nbsp;한국어 (KR)
+          </div>
+        </div>
+        <div class="navpanel">
+          <div class="inpaneleng"><del>W</del> KRW</div>
+        </div>
+        <div class="navpanelsemilong">
+          <div class="inpanel">
+            숙소 호스팅
+          </div>
+        </div>
+        <div class="navpanelsemilong">
+          <div class="inpanel">
+            체험 호스팅
+          </div>
+        </div>
+        <div class="navpanel">
+          <div class="inpanel">
+            도움말
+          </div>
+        </div>
+        <div class="navpanelmid">
+          <a href="javascript:view('contentWraps');">
+            <div class="inpanel">
+              회원 가입
+            </div>
+          </a>
+        </div>
+        <div class="navpanel">
+          <a href="javascript:view('contentWraps')">
+            <div class="inpanel">
+              로그인
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="midpanel">
+      <div id="simplesearch">
+        <h1>
+          특색 있는 숙소와 즐길
+        </h1>
+        <h1>
+          거리를 예약하세요.
+        </h1>
+        <form class="searchform">
+          <div id="dest">
+            <span>목적지</span>
+          </div>
+          <div id="modenwitch">
+            <input type="text" placeholder="모든 위치" />
+          </div>
+          <div id="checkinout">
+            <div class="checkinout">
+              체크인
+            </div>
+            <div class="checkinout">
+              체크아웃
+            </div>
+          </div>
+          <div id="checkinoutbox">
+            <div class="checkinoutbox">
+              <input type="text" placeholder="년. 월. 일" />
+            </div>
+            <div class="checkinoutbox">
+              <input type="text" placeholder="년. 월. 일" />
+            </div>
+          </div>
+          <label>
+            인원
+          </label>
+          <div id="peoples">
+            <div class="pleft"><span>인원</span></div>
+            <div class="pright">
+              <img src="img/hwasal.png" width="17px" />
+            </div>
+          </div>
+          <div id="searchbutton">
+            <button class="searchbutton">검색</button>
+          </div>
+        </form>
+      </div>
+      <div id="bottompanel">
+        <div id="toplane"></div>
+        <div id="bottompan">
+          <div class="fakeh3">
+            코로나19 사태에 대한 에어비앤비의 대응
+          </div>
+          <p>
+            에어비앤비는 2020년 3월 14일까지 예약을 마쳤으며 체크인<br />
+            날짜가 2020년 4월 14일 이전인 예약건에 대해, 게스트에게는<br />
+            예약금 전액 환불을, 호스트에게는 수수료 없는 취소 옵션을<br />
+            제공하고 있습니다. 이 정책은 신규 예약에는 적용되지<br />
+            않습니다.
+          </p>
+          <div class="fakeh4"><u>자세히 알아보기</u></div>
+        </div>
+      </div>
+      <div id="bottoms">
+        <div id="bottomblank"></div>
+        <div id="bottompad">
+          <div id="bottompadding">
+            <span>오리건에 있는 300개 이상의<br />독특한 숙소</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blank"></div>
+    <div class="contentWrap">
+      <div class="content">
+        <div class="title">
+          에어비앤비 둘러보기
+        </div>
+        <div id="lookaroundgrid">
+          <div class="lacontent">
+            <div id="laleft1"></div>
+            <div class="laright">
+              <div class="inlaright">
+                숙소
+              </div>
+            </div>
+          </div>
+          <div class="lacontent">
+            <div id="laleft2"></div>
+            <div class="laright">
+              <div class="inlaright">
+                체험
+              </div>
+            </div>
+          </div>
+          <div class="lacontent">
+            <div id="laleft3"></div>
+            <div class="laright">
+              <div class="inlaright">
+                어드벤처
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blank"></div>
+        <div class="title">에어비앤비 플러스 숙소</div>
+        <div class="lowspan">
+          <span>퀄리티와 인테리어 디자인이 검증된 숙소.</span>
+        </div>
+        <div id="plusimage">
+          <div id="pluscontent">
+            <div style="font-size:0.1px">&nbsp;</div>
+            <div id="pluslogo">
+              <img src="img/pluslogo.svg" />
+            </div>
+            <div id="plusbtnpanel">
+              <button id="plusbutton">
+                숙소 둘러보기 &nbsp;&nbsp;
+                <img src="img/rightpin.svg" width="10px" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="blank"></div>
+        <div class="title">에어비앤비 어드벤처를 소개합니다.</div>
+        <div class="lowspan">
+          <span>
+            현지 전문가가 진행하는 2일 이상의 여행 - 액티비티 식사 숙박 포함
+          </span>
+        </div>
+        <div id="adventuregrid">
+          <div class="adventure">
+            <div id="advimg1"></div>
+            <div class="underadvimg">
+              <div class="underavgtitle">
+                에콰도르
+              </div>
+              <div class="underavgspan">
+                <div class="margintopspan">
+                  4 Day Galapagos Island Hopping Budget<br />
+                </div>
+                <div class="margintopspan">
+                  1인당 ₩1,748,027부터 · 4일
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="adventure">
+            <div id="advimg2"></div>
+            <div class="underadvimg"></div>
+            <div class="underavgtitle">
+              노르웨이
+            </div>
+            <div class="underavgspan">
+              <div class="margintopspan">올 인클루시브 패키지 2박<br /></div>
+              <div class="margintopspan">
+                1인당 ₩636,636부터 · 3일<br />
+                <span>&starf;5.0 (13)</span>
+              </div>
+            </div>
+          </div>
+          <div class="adventure">
+            <div id="advimg3"></div>
+            <div class="underadvimg"></div>
+            <div class="underavgtitle">
+              사바나
+            </div>
+            <div class="underavgspan">
+              <div class="margintopspan">사자 밥 되실분 구함<br /></div>
+              <div class="margintopspan">
+                1인당 ₩9,999,999부터 · ?일<br />
+                <span>&starf;1.0 (22)</span>
+              </div>
+            </div>
+          </div>
+          <div class="adventure">
+            <div id="advimg4"></div>
+            <div class="underadvimg"></div>
+            <div class="underavgtitle">
+              스웨덴
+            </div>
+            <div class="underavgspan">
+              <div class="margintopspan">
+                스웨덴의 거친 숲 속에서 즐기는 캠핑<br />
+              </div>
+              <div class="margintopspan">
+                1인당 ₩969,457부터 · 4일<br />
+                <span>&starf;5.0 (2)</span>
+              </div>
+            </div>
+          </div>
+          <div class="adventure">
+            <div id="advimg5"></div>
+            <div class="underadvimg"></div>
+            <div class="underavgtitle">
+              코스타리카
+            </div>
+            <div class="underavgspan">
+              <div class="margintopspan">
+                블루 캐니언의 깊숙한 곳으로 떠나는 탐험
+              </div>
+              <div class="margintopspan">
+                1인당 ₩335,380부터 · 2일<br />
+                <span>&starf;5.0 (15)</span>
+              </div>
+            </div>
+          </div>
+          <div class="adventure">
+            <div id="advimg6"></div>
+            <div class="underadvimg"></div>
+            <div class="underavgtitle">
+              러시아
+            </div>
+            <div class="underavgspan">
+              <div class="margintopspan">
+                체르노빌에서 방사능을 만끽하세요
+              </div>
+              <div class="margintopspan">
+                1인당 ₩567,457부터 · 2일<br />
+                <span>&starf;3.0 (6)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#">
+          <div class="goto">
+            <span>어드벤처 모두 보기</span>
+            <img src="img/rightpin.svg" width="12px" />
+          </div>
+        </a>
+
+        <div class="blank"></div>
+        <div class="title">
+          <span>&nbsp;전 세계 숙소</span>
+        </div>
+        <div id="gridContent">
+          <div class="hotelpanel">
+            <a>
+              <img src="img/34.jpg" width="100%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="plus">
+                    PLUS
+                  </div>
+                  <span class="boxright">인도네시아</span>
+                </div>
+                <div class="panelright">
+                  <span class="star">&starf;</span>
+                  <span class="starright">4.90</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                Dutch Architecture Vialla with Private Pool
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/32.jpg" width="100%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">포르투갈</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.95</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                Douro Villa with swimming pool, Penafiel,...
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/22.jpg" width="100%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">아이슬란드</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.76</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                A BEAUTIFUL LUXURY VILLA IN NORTH...
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/7.jpg" width="100%" height="81.3%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">일본</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.94</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                Sanson Terrace "off-grid tiny cottage"
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/31.jpg" width="100%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">아이슬란드</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.76</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                Amazing view - Moderne apartment
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/27.jpg" width="100%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">프랑스</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.90</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                Superb duplex apartment in the historical...
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/2.jpg" width="100%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">크로아티아</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.78</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                The best position in Hvar!
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/17.jpg" width="100%" height="81.3%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">그리스</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.95</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                Hector cave house
+              </span>
+            </a>
+          </div>
+        </div>
+        <a href="#">
+          <div class="goto" id="whydown">
+            <span>보기(2,000개 이상)</span>
+            <img src="img/rightpin.svg" width="12px" />
+          </div>
+        </a>
+        <div class="blank"></div>
+        <div class="title">에어비앤비 플러스 추천 여행지</div>
+        <div class="lowspan">
+          <span>
+            내 집 같은 편안함 그 이상을 선사하는 아름다운 숙소를 찾아보세요.
+          </span>
+        </div>
+        <div class="recommendgrid">
+          <div class="recommendpanel">
+            <a class="recommendlink">
+              <div id="recommendimg1">
+                <div style="font-size:0.1px">&nbsp;</div>
+                <div class="inrecplus">
+                  <img src="img/pluslogo.svg" width="14%" />
+                </div>
+                <div class="inrecspan">
+                  케이프타운
+                </div>
+                <div class="inrecbottom">
+                  <img
+                    src="img/borderbottom1.svg"
+                    width="155px"
+                    height="15px"
+                  />
+                </div>
+              </div>
+              <div class="recommendbottom">
+                <div class="recbottitle">
+                  790개 이상의 검증된 숙소
+                </div>
+                <p>
+                  바다와 하늘이 아름다운 도시에서 항만의 로프트, 햇살 가득한
+                  스튜디오 등 멋지고 다양한 검증된 숙소를 만나보세요.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="recommendpanel">
+            <a class="recommendlink">
+              <div id="recommendimg2">
+                <div style="font-size:0.1px">&nbsp;</div>
+                <div class="inrecplus">
+                  <img src="img/pluslogo.svg" width="14%" />
+                </div>
+                <div class="inrecspan">
+                  오스틴
+                </div>
+                <div class="inrecbottom">
+                  <img src="img/borderbottom2.svg" width="85px" height="15px" />
+                </div>
+              </div>
+              <div class="recommendbottom">
+                <div class="recbottitle">
+                  390개 이상의 검증된 숙소
+                </div>
+                <p>
+                  퀄리티와 편안함이 검증된 숙소에서 음악과 바비큐를 즐기며
+                  편안히 쉬어보세요.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="recommendpanel">
+            <a class="recommendlink">
+              <div id="recommendimg3">
+                <div style="font-size:0.1px">&nbsp;</div>
+                <div class="inrecplus">
+                  <img src="img/pluslogo.svg" width="14%" />
+                </div>
+                <div class="inrecspan">
+                  멜버른
+                </div>
+                <div class="inrecbottom">
+                  <img src="img/borderbottom3.svg" width="85px" height="15px" />
+                </div>
+              </div>
+              <div class="recommendbottom">
+                <div class="recbottitle">
+                  420개 이상의 검증된 숙소
+                </div>
+                <p>
+                  세계 수준의 커피와 거리 예술을 자랑한 도시에서 햇살이 가득한
+                  로프트와 해변가의 아파트 등 검증된 숙소를 예약해보세요.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="#">
+          <div class="widegoto">
+            <span>에어비앤비 플러스 서비스 지역 더 보기</span>
+            <img src="img/rightpin.svg" width="12px" />
+          </div>
+        </a>
+        <div class="blank"></div>
+        <div class="title">
+          <span>&nbsp;슈퍼 호스트의 숙소</span>
+        </div>
+        <div class="lowspan2">
+          <span>
+            &nbsp;경험이 풍부한 호스트의 숙소에서 편안히 머물러보세요.
+          </span>
+        </div>
+        <div id="gridContent">
+          <div class="hotelpanel">
+            <a>
+              <img src="img/30.jpg" width="100%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">멕시코</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.75</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                The World Famous Seashell House ~ Casa Caracol
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/36.jpg" width="100%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">인도네시아</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.82</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                HIDEOUT BALI - Eco Bamboo Home
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/24.jpg" width="100%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">콜롬비아</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.93</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                Romantic Cavana with view
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/7.jpg" width="100%" height="78%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">일본</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.94</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                Sanson Terrace "off-grid tiny cottage"
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/19.jpg" width="100%" height="81.3%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">미국</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.86</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                The Mushroom Dome Retreat & LAND of Paradise...
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/53.jpg" width="100%" height="81.3%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">미국</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.85</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                Underground Hygge
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/29.jpg" width="100%" height="81.3%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">영국</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.96</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                Live in an historic English Castle!
+              </span>
+            </a>
+          </div>
+          <div class="hotelpanel">
+            <a>
+              <img src="img/31.jpg" width="100%" height="81.3%" />
+              <div class="flexs">
+                <div class="panelleft">
+                  <div class="superhost">
+                    슈퍼호스트
+                  </div>
+                  <span class="boxright">아이슬란드</span>
+                </div>
+                <div class="panelright">
+                  <span class="starlight">&starf;</span>
+                  <span class="starright">4.76</span>
+                </div>
+              </div>
+              <span class="panelbottom">
+                Amazing view - moderne apartment
+              </span>
+            </a>
+          </div>
+        </div>
+        <a href="#">
+          <div class="goto" id="whydown">
+            <span>보기(2,000개 이상)</span>
+            <img src="img/rightpin.svg" width="12px" />
+          </div>
+        </a>
+        <div class="blank"></div>
+        <div class="title">
+          다음 여행에 딱 맞는 독특한 숙소
+        </div>
+        <div class="lowspan">
+          이색적인 숙소에 머무르며 조금 색다른 경험을 해보세요
+        </div>
+        <div class="recommendgrid">
+          <div class="recommendpanel">
+            <a class="recommendlink">
+              <div id="nextimg1"></div>
+              <div class="nextbottom">
+                <div class="nbtop">
+                  트리하우스 1,910개
+                </div>
+                <div class="nbmid">
+                  나무 위에서 보내는 하룻밤
+                </div>
+                <div class="nbbot">
+                  세상에서 단 하나뿐인 트리하우스에 머무르며 여행의 신세계를
+                  경험해보세요.
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="recommendpanel">
+            <a class="recommendlink">
+              <div id="nextimg2"></div>
+              <div class="nextbottom">
+                <div class="nbtop">
+                  보트 2,000개 이상
+                </div>
+                <div class="nbmid">
+                  물 위에서 보내는 하룻밤
+                </div>
+                <div class="nbbot">
+                  다양한 모양과 크기의 보트에서 머물며 모험가의 발자취를
+                  따라가보세요.
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="recommendpanel">
+            <a class="recommendlink">
+              <div id="nextimg3"></div>
+              <div class="nextbottom">
+                <div class="nbtop">
+                  유르트 1,820개
+                </div>
+                <div class="nbmid">
+                  글램핑을 위한 숙소
+                </div>
+                <div class="nbbot">
+                  캠핑도 스타일 있게! 대자연 속에서도 안락함을 즐겨보세요.
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+      function view(str) {
+        var obj = document.getElementById(str);
+        var bod = document.getElementById(body);
+        if (obj.style.display == "") {
+          obj.style.display = "none";
+          body.style.overflow = "auto";
+        } else {
+          obj.style.display = "";
+          body.style.overflow = "hidden";
+        }
+      }
+    </script>
+  </body>
+</html>

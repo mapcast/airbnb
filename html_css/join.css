@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+#contentWrapj {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(24, 24, 24, 0.5);
+}
+
+.contentj {
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 568px;
+  height: 363px;
+  padding: 32px;
+}
+.topsj {
+  width: 100%;
+  height: 16px;
+  margin: 0 0 24px;
+}
+.topsj > button {
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  margin: -20px;
+  padding: 8px;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+.buttonsj {
+  width: 100%;
+  height: 204px;
+}
+button {
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#facebook {
+  padding: 10px 140px;
+  background: #4568b2;
+  border: none;
+}
+#google {
+  margin-top: 8px;
+  background: white;
+  padding: 10px 155px;
+  border: 2px solid #777777;
+}
+#email {
+  margin-top: 18px;
+  background: #ff5a5f;
+  padding: 10px 166px;
+  border: none;
+}
+.line-combo {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.line-combo > span {
+  font-weight: 800;
+  color: #767676;
+  font-size: 14px;
+}
+.lines {
+  width: 220px;
+  height: 12px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.bottomsj {
+  margin-top: 16px;
+}
+.bottomsj > hr {
+  border: 0.5px solid #e4e4e4;
+}
+.mojij {
+  margin-top: 16px;
+}
+.mojij > span {
+  color: #484848;
+  font-size: 16px;
+}
+.mojij > span > a {
+  font-weight: 800;
+  color: #008489;
+}
+.inbtn {
+  display: flex;
+  justify-content: space-around;
+}
+.notgg {
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+}
+.gg {
+  color: #484848;
+  font-weight: 800;
+  font-size: 16px;
+}
