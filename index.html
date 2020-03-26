@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>숙소, 체험, 장소를 모두 한곳에서 - 에어비앤비(복사된 페이지)</title>
     <link rel="stylesheet" type="text/css" href="finish2.css" />
     <link
       rel="stylesheet"
@@ -11,14 +11,14 @@
       integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/airbnbred.svg" type="image/x-icon" />
   </head>
   <body id="body">
     <div id="bgimg"></div>
     <div id="contentWrapj" style="display:none">
       <section class="contentj">
         <div class="topsj">
-          <a href="javascript:view('contentWraps')">
+          <a href="javascript:view('contentWrapj')">
             <button>
               <img src="img/close.svg" width="18px" />
             </button>
@@ -159,7 +159,7 @@
           </div>
         </div>
         <div class="navpanelmid">
-          <a href="javascript:view('contentWraps');">
+          <a href="javascript:view('contentWrapj');">
             <div class="inpanel">
               회원 가입
             </div>
@@ -850,6 +850,90 @@
         <div class="blank"></div>
         <div class="blank"></div>
       </div>
+      <hr style="border:0.5px solid lightgray" />
+      <div class="bottomoption">
+        <div class="boWrap">
+          <div class="boWrapgrid">
+            <div class="bogridcontent">
+              <div class="bgcTitle">에어비앤비</div>
+              <div class="inbogbox"><a href="#">채용정보</a></div>
+              <div class="inbogbox"><a href="#">뉴스</a></div>
+              <div class="inbogbox"><a href="#">정책</a></div>
+              <div class="inbogbox"><a href="#">다양성과 소속감</a></div>
+              <div class="inbogbox"><a href="#">접근성</a></div>
+            </div>
+            <div class="bogridcontent">
+              <div class="bgcTitle">여행하기</div>
+              <div class="inbogbox"><a href="#">신뢰와 안전</a></div>
+              <div class="inbogbox"><a href="#">여행 크레딧</a></div>
+              <div class="inbogbox"><a href="#">Airbnb Citizen</a></div>
+              <div class="inbogbox"><a href="#">비즈니스 프로그램</a></div>
+              <div class="inbogbox"><a href="#">즐길 거리</a></div>
+              <div class="inbogbox"><a href="#">Airbnbmag</a></div>
+              <div class="inbogbox">
+                <a href="#">한국의 변경된 환불 정책</a>
+              </div>
+            </div>
+            <div class="bogridcontent">
+              <div class="bgcTitle">호스팅하기</div>
+              <div class="inbogbox"><a href="#">호스팅의 장점</a></div>
+              <div class="inbogbox"><a href="#">호스팅 기준</a></div>
+              <div class="inbogbox">
+                <a href="#">책임감 있는 호스팅 하기</a>
+              </div>
+              <div class="inbogbox"><a href="#">커뮤니티 센터</a></div>
+              <div class="inbogbox"><a href="#">체험 호스팅</a></div>
+              <div class="inbogbox"><a href="#">Open Homes 프로그램</a></div>
+            </div>
+            <div class="bogridcontent">
+              <div class="bgcTitle">고객지원</div>
+              <div class="inbogbox"><a href="#">도움말</a></div>
+              <div class="inbogbox">
+                <div><a href="#">에어비앤비 이웃 민원 지원&nbsp;</a></div>
+                <div class="newsosik">새소식</div>
+              </div>
+            </div>
+          </div>
+          <hr style="border:0.5px solid lightgray" />
+          <div class="lastbottom">
+            <div class="lastbottomleft">
+              <div style="margin-top:-1px">
+                <img src="img/airbnbgray.svg" width="20px;" />
+              </div>
+              <div>
+                &nbsp;&nbsp;© 2020 Airbnb, Inc. All rights reserved.
+                <a href="#">이용약관</a> · <a href="#">개인정보 처리방침</a> ·
+                <a href="#">여행지 찾기</a>
+              </div>
+            </div>
+            <div class="lastbottomright" style="display:flex">
+              <div class="iconz">
+                <a href="#">
+                  <img src="img/facebookgray.svg" width="18px" />
+                </a>
+              </div>
+              <div class="iconz">
+                <a href="#">
+                  <img src="img/twittergray.svg" width="18px" />
+                </a>
+              </div>
+              <div class="iconz">
+                <a href="#">
+                  <img src="img/instagray.svg" width="18px" />
+                </a>
+              </div>
+              <div class="iconz">
+                <a href="#">
+                  <img src="img/naverblog.svg" width="18px" />
+                </a>
+              </div>
+              <div class="iconz">
+                <a href="#"><img src="img/naverpost.svg" width="18px"/></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script>
@@ -859,9 +943,21 @@
         if (obj.style.display == "") {
           obj.style.display = "none";
           body.style.overflow = "auto";
+          window.onclick = function(event) {
+            if (event.target == obj) {
+              obj.style.display = "none";
+              body.style.overflow = "";
+            }
+          };
         } else {
           obj.style.display = "";
           body.style.overflow = "hidden";
+          window.onclick = function(event) {
+            if (event.target == obj) {
+              obj.style.display = "none";
+              body.style.overflow = "";
+            }
+          };
         }
       }
     </script>
